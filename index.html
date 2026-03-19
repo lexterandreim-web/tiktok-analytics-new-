@@ -35,7 +35,6 @@
             <main class="content">
                 <section class="video-preview-section">
                     <div class="video-thumb">
-                        <!-- Replace preview.jpg with your own uploaded thumbnail -->
                         <img src="preview.jpg" alt="Video thumbnail" class="video-image" />
                         <div class="video-shade"></div>
                         <span class="video-duration">12.77s</span>
@@ -110,126 +109,273 @@
                     <div class="processing-text">Processing…</div>
                 </section>
 
+                <!-- VIEWER TYPES -->
                 <section class="card">
                     <div class="card-title">Viewer types</div>
 
-                    <div class="row">
-                        <span>89%</span>
-                        <span>11%</span>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 89%;"></div>
-                    </div>
-                    <div class="row label-row">
-                        <span>New viewers</span>
-                        <span>Returning viewers</span>
+                    <div class="auto-group viewer-type-group">
+                        <div class="auto-item" data-value="89">
+                            <div class="row">
+                                <span>New viewers</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="auto-item" data-value="11">
+                            <div class="row">
+                                <span>Returning viewers</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="spacer-sm"></div>
 
-                    <div class="row">
-                        <span>87%</span>
-                        <span>13%</span>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 87%;"></div>
-                    </div>
-                    <div class="row label-row">
-                        <span>Non-followers</span>
-                        <span>Followers</span>
+                    <div class="auto-group follow-group">
+                        <div class="auto-item" data-value="87">
+                            <div class="row">
+                                <span>Non-followers</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="auto-item" data-value="13">
+                            <div class="row">
+                                <span>Followers</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
+                <!-- GENDER -->
                 <section class="card">
                     <div class="card-title">Gender</div>
+
                     <div class="chart-wrap">
                         <canvas id="genderChart"></canvas>
                     </div>
 
-                    <div class="legend-row">
-                        <span class="legend-left"><span class="dot dot1"></span>Male</span>
-                        <span>81%</span>
-                    </div>
-                    <hr />
+                    <div class="auto-group gender-group">
+                        <div class="legend-row auto-item" data-value="81">
+                            <span class="legend-left"><span class="dot dot1"></span>Male</span>
+                            <span class="percent"></span>
+                        </div>
+                        <hr />
 
-                    <div class="legend-row">
-                        <span class="legend-left"><span class="dot dot2"></span>Female</span>
-                        <span>19%</span>
-                    </div>
-                    <hr />
+                        <div class="legend-row auto-item" data-value="19">
+                            <span class="legend-left"><span class="dot dot2"></span>Female</span>
+                            <span class="percent"></span>
+                        </div>
+                        <hr />
 
-                    <div class="legend-row">
-                        <span class="legend-left"><span class="dot dot3"></span>Other</span>
-                        <span>0%</span>
+                        <div class="legend-row auto-item" data-value="0">
+                            <span class="legend-left"><span class="dot dot3"></span>Other</span>
+                            <span class="percent"></span>
+                        </div>
                     </div>
                 </section>
 
+                <!-- AGE -->
                 <section class="card">
                     <div class="card-title">Age</div>
 
-                    <div class="row"><span>18 - 24</span><span>57%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 57%;"></div></div>
+                    <div class="auto-group age-group">
+                        <div class="auto-item" data-value="57">
+                            <div class="row">
+                                <span>18 - 24</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>25 - 34</span><span>37%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 37%;"></div></div>
+                        <div class="auto-item" data-value="37">
+                            <div class="row">
+                                <span>25 - 34</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>35 - 44</span><span>3%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 3%;"></div></div>
+                        <div class="auto-item" data-value="3">
+                            <div class="row">
+                                <span>35 - 44</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>45 - 54</span><span>2%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 2%;"></div></div>
+                        <div class="auto-item" data-value="2">
+                            <div class="row">
+                                <span>45 - 54</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>55+</span><span>1%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 1%;"></div></div>
+                        <div class="auto-item" data-value="1">
+                            <div class="row">
+                                <span>55+</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
+                    </div>
                 </section>
 
+                <!-- LOCATIONS -->
                 <section class="card">
                     <div class="card-title">Locations</div>
 
-                    <div class="row"><span>United States</span><span>96.3%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 96.3%;"></div></div>
+                    <div class="auto-group location-group">
+                        <div class="auto-item" data-value="96.3">
+                            <div class="row">
+                                <span>United States</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>Mexico</span><span>0.4%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 0.4%;"></div></div>
+                        <div class="auto-item" data-value="0.4">
+                            <div class="row">
+                                <span>Mexico</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>Malaysia</span><span>0.3%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 0.3%;"></div></div>
+                        <div class="auto-item" data-value="0.3">
+                            <div class="row">
+                                <span>Malaysia</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>Ethiopia</span><span>0.2%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 0.2%;"></div></div>
+                        <div class="auto-item" data-value="0.2">
+                            <div class="row">
+                                <span>Ethiopia</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>Morocco</span><span>0.2%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 0.2%;"></div></div>
+                        <div class="auto-item" data-value="0.2">
+                            <div class="row">
+                                <span>Morocco</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>New Zealand</span><span>0.2%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 0.2%;"></div></div>
+                        <div class="auto-item" data-value="0.2">
+                            <div class="row">
+                                <span>New Zealand</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>United Arab Emirates</span><span>0.1%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 0.1%;"></div></div>
+                        <div class="auto-item" data-value="0.1">
+                            <div class="row">
+                                <span>United Arab Emirates</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>United Kingdom</span><span>0.1%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 0.1%;"></div></div>
+                        <div class="auto-item" data-value="0.1">
+                            <div class="row">
+                                <span>United Kingdom</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>Indonesia</span><span>0.1%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 0.1%;"></div></div>
+                        <div class="auto-item" data-value="0.1">
+                            <div class="row">
+                                <span>Indonesia</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>Nepal</span><span>0.1%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 0.1%;"></div></div>
+                        <div class="auto-item" data-value="0.1">
+                            <div class="row">
+                                <span>Nepal</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
 
-                    <div class="row"><span>Other</span><span>2.0%</span></div>
-                    <div class="progress"><div class="progress-bar" style="width: 2%;"></div></div>
+                        <div class="auto-item" data-value="2">
+                            <div class="row">
+                                <span>Other</span>
+                                <span class="percent"></span>
+                            </div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
     </div>
 
     <script>
+        function updateAutoGroup(selector, decimals = 0) {
+            const items = document.querySelectorAll(selector);
+            let total = 0;
+
+            items.forEach(item => {
+                total += parseFloat(item.dataset.value || 0);
+            });
+
+            items.forEach(item => {
+                const value = parseFloat(item.dataset.value || 0);
+                const percent = total === 0 ? 0 : (value / total) * 100;
+                const shownPercent = percent.toFixed(decimals);
+
+                const percentEl = item.querySelector(".percent");
+                const barEl = item.querySelector(".progress-bar");
+
+                if (percentEl) {
+                    percentEl.textContent = shownPercent + "%";
+                }
+
+                if (barEl) {
+                    barEl.style.width = percent + "%";
+                }
+            });
+        }
+
+        updateAutoGroup(".viewer-type-group .auto-item", 0);
+        updateAutoGroup(".follow-group .auto-item", 0);
+        updateAutoGroup(".age-group .auto-item", 0);
+        updateAutoGroup(".location-group .auto-item", 1);
+        updateAutoGroup(".gender-group .auto-item", 0);
+
+        const genderItems = document.querySelectorAll(".gender-group .auto-item");
+        const genderLabels = ["Male", "Female", "Other"];
+        const genderValues = Array.from(genderItems).map(item => parseFloat(item.dataset.value || 0));
+
         new Chart(document.getElementById("genderChart"), {
             type: "doughnut",
             data: {
-                labels: ["Male", "Female", "Other"],
+                labels: genderLabels,
                 datasets: [{
-                    data: [81, 19, 0],
+                    data: genderValues,
                     backgroundColor: ["#1677ff", "#7eb6ff", "#e6ebf2"],
                     borderWidth: 0,
                     cutout: "72%"
