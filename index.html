@@ -35,7 +35,12 @@
             <main class="content">
                 <section class="video-preview-section">
                     <div class="video-thumb">
-                        <img src="preview.jpg" alt="Video thumbnail" class="video-image" />
+                        <img
+                            src="./preview.jpg"
+                            alt="Video thumbnail"
+                            class="video-image"
+                            onerror="this.onerror=null; this.src='https://picsum.photos/300/450';"
+                        />
                         <div class="video-shade"></div>
                         <span class="video-duration">12.77s</span>
                     </div>
