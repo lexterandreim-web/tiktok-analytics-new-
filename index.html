@@ -124,8 +124,9 @@
                         <span>89%</span>
                         <span>11%</span>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 89%;"></div>
+                    <div class="progress progress-split">
+                        <div class="progress-segment split-primary" style="width: 89%;"></div>
+                        <div class="progress-segment split-secondary" style="width: 11%;"></div>
                     </div>
                     <div class="row label-row">
                         <span>New viewers</span>
@@ -138,8 +139,9 @@
                         <span>87%</span>
                         <span>13%</span>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 87%;"></div>
+                    <div class="progress progress-split">
+                        <div class="progress-segment split-primary" style="width: 87%;"></div>
+                        <div class="progress-segment split-secondary" style="width: 13%;"></div>
                     </div>
                     <div class="row label-row">
                         <span>Non-followers</span>
@@ -236,10 +238,14 @@
             data: {
                 labels: ["Male", "Female", "Other"],
                 datasets: [{
-                    data: [81, 19, 0],
-                    backgroundColor: ["#1677ff", "#7eb6ff", "#e6ebf2"],
-                    borderWidth: 0,
-                    cutout: "72%"
+                    data: [81, 19, 0.0001],
+                    backgroundColor: ["#1677ff", "#7eb6ff", "#dbe6f3"],
+                    borderColor: "#ffffff",
+                    borderWidth: 3,
+                    borderRadius: 2,
+                    spacing: 2,
+                    cutout: "68%",
+                    hoverOffset: 0
                 }]
             },
             options: {
@@ -247,6 +253,7 @@
                 maintainAspectRatio: false,
                 rotation: -90,
                 circumference: 180,
+                animation: false,
                 plugins: {
                     legend: {
                         display: false
