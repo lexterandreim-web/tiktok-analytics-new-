@@ -359,6 +359,35 @@ body {
     background: linear-gradient(90deg, #1677ff 0%, #4597ff 100%);
 }
 
+.progress-split {
+    display: flex;
+    gap: 2px;
+    background: var(--track);
+    padding: 0;
+}
+
+.progress-segment {
+    height: 100%;
+}
+
+.progress-segment:first-child {
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+}
+
+.progress-segment:last-child {
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+}
+
+.split-primary {
+    background: linear-gradient(90deg, #1677ff 0%, #4597ff 100%);
+}
+
+.split-secondary {
+    background: #9ec5ff;
+}
+
 .chart-wrap {
     position: relative;
     width: 100%;
@@ -394,7 +423,7 @@ body {
 }
 
 .dot3 {
-    background: #e6ebf2;
+    background: #dbe6f3;
 }
 
 hr {
