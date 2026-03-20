@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TikTok Analytics UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="phone-frame">
+    <header class="topbar">
+      <button class="back-btn" aria-label="Back">←</button>
+      <div class="title">Video analytics</div>
+      <div class="studio-pill">TikTok Studio</div>
+    </header>
+
+    <section class="hero">
+      <img
+        class="video-thumb"
+        src="images/overview-cover.jpg"
+        alt="TikTok video cover"
+      />
+      <p class="posted-date">Posted on Mar 10, 2026, 8:42 AM</p>
+    </section>
+
+    <section class="stats-row">
+      <div class="stat">▶<strong>4,075</strong></div>
+      <div class="stat">❤<strong>11</strong></div>
+      <div class="stat">💬<strong>0</strong></div>
+      <div class="stat">↗<strong>0</strong></div>
+      <div class="stat">🔖<strong>2</strong></div>
+    </section>
+
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="overview">Overview</button>
+      <button class="tab-btn" data-tab="viewers">Viewers</button>
+      <button class="tab-btn" data-tab="engagement">Engagement</button>
+    </nav>
+
+    <main>
+      <section class="tab-panel active" id="overview">
+        <div class="alert-box">
+          Your video is not eligible for recommendation in the For You feed. If you disagree with the content restriction, you can appeal.
+        </div>
+
+        <div class="card">
+          <h2>Key metrics</h2>
+          <p class="muted">Updated on 3/19/2026</p>
+          <div class="metrics-grid">
+            <div class="metric-box primary">
+              <div class="metric-label">Video views</div>
+              <div class="metric-value">4075</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Total play time</div>
+              <div class="metric-value">0h:50m:29s</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Average watch time</div>
+              <div class="metric-value">0.7s</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Watched full video</div>
+              <div class="metric-value">0.11%</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">New followers</div>
+              <div class="metric-value">1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Retention rate</h2>
+          <p class="small-note">On average, viewers watched 3% of your video. Most viewers stopped watching at 0:01.</p>
+          <img class="section-image" src="images/overview-retention.jpg" alt="Retention screenshot" />
+        </div>
+
+        <div class="card">
+          <h2>Traffic sources</h2>
+          <div class="bar-list">
+            <div class="bar-row">
+              <div class="bar-head"><span>Personal profile</span><span>95.5%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:95.5%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>For You</span><span>4.4%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:4.4%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>Search</span><span>0.1%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:0.1%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Search queries</h2>
+          <div class="bar-list">
+            <div class="bar-row">
+              <div class="bar-head"><span>how is the alliga how's it goingta</span><span>33.3%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:33.3%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>liquidity sweep lux algo</span><span>33.3%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:33.3%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>liquidity sweep luxalgo</span><span>33.3%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:33.3%"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="viewers">
+        <div class="card">
+          <h2>Total viewers</h2>
+          <div class="viewer-highlight">186</div>
+          <div class="viewer-note">+1 <span class="muted">(vs 1d ago)</span></div>
+        </div>
+
+        <div class="card">
+          <h2>Viewer types</h2>
+          <div class="bar-list">
+            <div class="bar-row">
+              <div class="bar-head"><span>New viewers</span><span>92%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>Returning viewers</span><span>8%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:8%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>Non-followers</span><span>100%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>Followers</span><span>0%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Gender</h2>
+          <div class="bar-list">
+            <div class="bar-row">
+              <div class="bar-head"><span>Male</span><span>14%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:14%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>Female</span><span>78%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>Other</span><span>8%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:8%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Age</h2>
+          <div class="bar-list">
+            <div class="bar-row">
+              <div class="bar-head"><span>18 - 24</span><span>88%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>25 - 34</span><span>12%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:12%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Locations</h2>
+          <div class="bar-list">
+            <div class="bar-row">
+              <div class="bar-head"><span>Philippines</span><span>99.0%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:99%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>United States</span><span>0.5%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:0.5%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>India</span><span>0.1%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:0.1%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>Malaysia</span><span>0.1%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:0.1%"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-head"><span>Singapore</span><span>0.1%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width:0.1%"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="engagement">
+        <div class="card">
+          <h2>Top words used in comments</h2>
+          <p class="muted">Top word insights are not ready yet. Please check back later.</p>
+        </div>
+
+        <div class="card">
+          <h2>Likes</h2>
+          <p class="small-note">Most viewers liked this video at 0:00. Check out the moment where most viewers liked your video.</p>
+          <img class="section-image" src="images/engagement-likes.jpg" alt="Engagement screenshot" />
+        </div>
+      </section>
+    </main>
+
+    <div class="footer-note">
+      Put your screenshots in an images folder and keep the filenames used in this file.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
