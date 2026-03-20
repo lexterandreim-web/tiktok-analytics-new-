@@ -24,11 +24,26 @@
     </section>
 
     <section class="stats-row">
-      <div class="stat">▶<strong>4,075</strong></div>
-      <div class="stat">❤<strong>11</strong></div>
-      <div class="stat">💬<strong>0</strong></div>
-      <div class="stat">↗<strong>0</strong></div>
-      <div class="stat">🔖<strong>2</strong></div>
+      <div class="stat">
+        <span class="stat-icon">▶</span>
+        <strong>4,075</strong>
+      </div>
+      <div class="stat">
+        <span class="stat-icon">❤</span>
+        <strong>11</strong>
+      </div>
+      <div class="stat">
+        <span class="stat-icon">💬</span>
+        <strong>0</strong>
+      </div>
+      <div class="stat">
+        <span class="stat-icon">↗</span>
+        <strong>0</strong>
+      </div>
+      <div class="stat">
+        <span class="stat-icon">🔖</span>
+        <strong>2</strong>
+      </div>
     </section>
 
     <nav class="tabs">
@@ -71,13 +86,32 @@
         </div>
 
         <div class="card">
-          <h2>Retention rate</h2>
-          <p class="small-note">On average, viewers watched 3% of your video. Most viewers stopped watching at 0:01.</p>
-          <img class="section-image" src="images/overview-retention.jpg" alt="Retention screenshot" />
+          <div class="card-header">
+            <h2>Retention rate</h2>
+            <span class="info-badge">i</span>
+          </div>
+          <p class="retention-copy">On average, viewers watched 3% of your video.</p>
+          <p class="small-note">Most viewers stopped watching at 0:01. Check out the moment in your video where most viewers lost interest.</p>
+          <img class="section-image portrait-image" src="images/overview-retention.jpg" alt="Retention screenshot" />
+          <div class="chart-shell">
+            <div class="chart-lines"></div>
+            <div class="retention-line"></div>
+            <div class="chart-slider">
+              <div class="chart-progress"></div>
+              <div class="chart-thumb"></div>
+            </div>
+            <div class="chart-labels">
+              <span>00:20 (0%)</span>
+              <span>00:24</span>
+            </div>
+          </div>
         </div>
 
         <div class="card">
-          <h2>Traffic sources</h2>
+          <div class="card-header">
+            <h2>Traffic sources</h2>
+            <span class="info-badge">i</span>
+          </div>
           <div class="bar-list">
             <div class="bar-row">
               <div class="bar-head"><span>Personal profile</span><span>95.5%</span></div>
@@ -95,7 +129,10 @@
         </div>
 
         <div class="card">
-          <h2>Search queries</h2>
+          <div class="card-header">
+            <h2>Search queries</h2>
+            <span class="info-badge">i</span>
+          </div>
           <div class="bar-list">
             <div class="bar-row">
               <div class="bar-head"><span>how is the alliga how's it goingta</span><span>33.3%</span></div>
@@ -115,13 +152,19 @@
 
       <section class="tab-panel" id="viewers">
         <div class="card">
-          <h2>Total viewers</h2>
+          <div class="card-header">
+            <h2>Total viewers</h2>
+            <span class="info-badge">i</span>
+          </div>
           <div class="viewer-highlight">186</div>
           <div class="viewer-note">+1 <span class="muted">(vs 1d ago)</span></div>
         </div>
 
         <div class="card">
-          <h2>Viewer types</h2>
+          <div class="card-header">
+            <h2>Viewer types</h2>
+            <span class="info-badge">i</span>
+          </div>
           <div class="bar-list">
             <div class="bar-row">
               <div class="bar-head"><span>New viewers</span><span>92%</span></div>
@@ -143,8 +186,13 @@
         </div>
 
         <div class="card">
-          <h2>Gender</h2>
-          <div class="bar-list">
+          <div class="card-header">
+            <h2>Gender</h2>
+          </div>
+          <div class="gender-arc-wrap">
+            <div class="gender-arc"></div>
+          </div>
+          <div class="bar-list compact-list">
             <div class="bar-row">
               <div class="bar-head"><span>Male</span><span>14%</span></div>
               <div class="bar-track"><div class="bar-fill" style="width:14%"></div></div>
@@ -161,7 +209,9 @@
         </div>
 
         <div class="card">
-          <h2>Age</h2>
+          <div class="card-header">
+            <h2>Age</h2>
+          </div>
           <div class="bar-list">
             <div class="bar-row">
               <div class="bar-head"><span>18 - 24</span><span>88%</span></div>
@@ -175,7 +225,10 @@
         </div>
 
         <div class="card">
-          <h2>Locations</h2>
+          <div class="card-header">
+            <h2>Locations</h2>
+            <span class="info-badge">i</span>
+          </div>
           <div class="bar-list">
             <div class="bar-row">
               <div class="bar-head"><span>Philippines</span><span>99.0%</span></div>
@@ -203,14 +256,32 @@
 
       <section class="tab-panel" id="engagement">
         <div class="card">
-          <h2>Top words used in comments</h2>
+          <div class="card-header">
+            <h2>Top words used in comments</h2>
+            <span class="info-badge">i</span>
+          </div>
           <p class="muted">Top word insights are not ready yet. Please check back later.</p>
         </div>
 
         <div class="card">
-          <h2>Likes</h2>
+          <div class="card-header">
+            <h2>Likes</h2>
+            <span class="info-badge">i</span>
+          </div>
           <p class="small-note">Most viewers liked this video at 0:00. Check out the moment where most viewers liked your video.</p>
-          <img class="section-image" src="images/engagement-likes.jpg" alt="Engagement screenshot" />
+          <img class="section-image portrait-image" src="images/engagement-likes.jpg" alt="Engagement screenshot" />
+          <div class="chart-shell likes-shell">
+            <div class="chart-lines"></div>
+            <div class="likes-line"></div>
+            <div class="chart-slider">
+              <div class="chart-progress short-progress"></div>
+              <div class="chart-thumb"></div>
+            </div>
+            <div class="chart-labels">
+              <span>00:21 (0%)</span>
+              <span>00:24</span>
+            </div>
+          </div>
         </div>
       </section>
     </main>
